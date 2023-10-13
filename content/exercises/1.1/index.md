@@ -1,8 +1,10 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "1.1"
+date: 2023-10-13
 draft: false
 ---
+
+Evaluate these in your head:
 
 ```scheme
 10
