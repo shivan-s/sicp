@@ -2,7 +2,7 @@
 <main class="container prose mx-auto mt-6">
     <h1>{{ .Title }}</h1>
   <ul class="flex flex-col">
-    {{ range where .Site.RegularPages "Type" "exercises"}}
+    {{ range where .Site.RegularPages.ByLinkTitle "Type" "exercises"}}
     <li>
     <a class="text-blue-500" href="{{ .Permalink }}">Ex {{ .Title }}</a>{{end}}
     </li>

@@ -1,17 +1,19 @@
 ---
 title: "1.1"
-date: 2023-10-13
+date: 2023-10-10
 draft: false
 ---
+
+## Question & Answer
 
 Evaluate these in your head:
 
 ```scheme
-10
-(+ 5 3 4)
-(- 9 1)
-(/ 6 2)
-(+ (* 2 4) (- 4 6))
+10 ; 10
+(+ 5 3 4) ; 12
+(- 9 1) ; 8
+(/ 6 2) ; 3
+(+ (* 2 4) (- 4 6)) ; 6
 (define a 3)
 (define b (+ a 1))
 (+ a b (* a b))

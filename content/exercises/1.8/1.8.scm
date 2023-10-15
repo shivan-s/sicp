@@ -3,20 +3,23 @@
 (define (square n)
   (* n n))
 
+(define (cube n)
+  (* n n n)
+  )
+
 (define (good-enough? guess x)
-  (and (>= (+ x 0.001) (square guess)) (<= (- x 0.001) (square guess))))
+  (and (>= (+ x 0.001) (cube guess)) (<= (- x 0.001) (cube guess))))
 
 (define (improve guess x)
   (/ (+ guess (/ x guess)) 2))
 
-(define (sqrt-iter guess x)
+(define (cube-iter guess x)
   (if (good-enough? guess x)
     guess
-    (sqrt-iter (improve guess x) x)))
-
+    (cube-iter (improve guess x) x)))
 
 (good-enough? 2 4)
 (good-enough? 2 9)
-(good-enough? 3 9)
+(good-enough? 3 27)
 
-(sqrt-iter 8 9)
+(cube-iter 8 9)
