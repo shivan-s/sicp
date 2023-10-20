@@ -1,4 +1,7 @@
 <head>
+  <title>
+    SICP - {{ .Title }}
+  </title>
   {{ $style := resources.Get "css/styles.css" }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
 </head>
