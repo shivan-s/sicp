@@ -5,4 +5,4 @@ title: Home
 
 ## Harold Abelson and Gerald Jay Sussman with Julie Sussman
 
-This is [my attempt]("https://shivan.xyz") at the exercises of the book.
+This is [my attempt](https://shivan.xyz) at the exercises of the book.
