@@ -5,7 +5,7 @@
     {{ range where .Site.RegularPages.ByLinkTitle "Type" "exercises"}}
     <li>
       <a class="text-blue-500" href="{{ .Permalink }}">{{ .Title }}</a>{{if .Params.Completed
-      }} ✅ {{else}}❌ {{end}}
+      }} ✅ {{else}} ❌ {{end}}
       {{ if .Description }} - {{ .Description
       }}{{end}}{{end}}
     </li>

@@ -1,13 +1,5 @@
----
-title: "1.8"
-date: 2023-10-16
-draft: false
-completed: false
----
+#lang scheme
 
-## Answer
-
-```scheme
 (define (square n)
   (* n n))
 
@@ -31,4 +23,3 @@ completed: false
 (good-enough? 3 27)
 
 (cube-iter 8 9) ; FIXME: this is not working
-```
